@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Farruqui</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        background-color: #607d8b;
+      }
+
+      .content-centered {
+        text-align: center;
+        color: #fff;
+      }
+
+      /* Header & Footer */
+      header,
+      footer {
+        height: 100px;
+      }
+
+      header h1,
+      footer h3 {
+        font-size: 30px;
+        padding-top: 25px;
+      }
+
+      /* Navigation */
+      nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-flex;
+        padding: 25px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Photo Gallery */
+      .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+      }
+
+      .photo-gallery .photo {
+        position: relative;
+        margin: 10px;
+        width: 300; /* Fixed width */
+        height: 300; /* Fixed height */
+        overflow: hidden;
+      }
+
+      .photo-gallery img {
+        width: 100%;
+        height: 100%; /* Make the image cover the full height of the container */
+        object-fit: cover; /* Ensure images cover the space without distortion */
+        transition: transform 0.3s;
+      }
+
+      .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+      }
+
+      .photo-gallery .photo {
+        position: relative;
+        margin: 10px;
+        width: calc(33.33% - 20px);
+        overflow: hidden;
+      }
+
+      .photo-gallery img {
+        width: 100%;
+        transition: transform 0.3s;
+      }
+
+      .photo-gallery .photo:hover img {
+        transform: scale(1.1);
+      }
+
+      .photo-gallery .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .photo-gallery .photo:hover .caption {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container content-centered">
+      <h1>Personal</h1>
+    </header>
+
+    <nav class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Life</a></li>
+        <li><a href="activities.html">School Activities</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+      </ul>
+    </nav>
+
+    <div class="photo-gallery container">
+      <!-- Placeholder images. You can replace these with your own photos and captions -->
+      <div class="photo">
+        <img src="tennis.png" alt="Description 1" />
+        <div class="caption">Caption for Image 1</div>
+      </div>
+      <div class="photo">
+        <img src="saxophone.png" alt="Description 2" />
+        <div class="caption">Caption for Image 2</div>
+      </div>
+      <div class="photo">
+        <img src="Family.png" alt="Description 3" />
+        <div class="caption">Caption for Image 3</div>
+      </div>
+    </div>
+
+    <footer class="container content-centered">
+      <h3>Footer Section</h3>
+      <p>&copy; Copyright 2023</p>
+    </footer>
+  </body>
+</html>

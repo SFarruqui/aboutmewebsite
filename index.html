@@ -1,29 +1,159 @@
-<!-- Source for layout: https://www.educba.com/html-layout/ -->
-<html>
-<head>
-<title> About Me </title>
-</head>
-<body>
-<header style = "height: 100px; width: 100%; background-color: #607D8B;" >
-<h1 style=" color: #fff; text-align: center; padding-top: 25px; font-size: 30px;" > About Me: Simon Farruqui</h1>
-</header>
-<style>
-    li{
-    display: inline-flex;
-    padding: 25px
-    }
-    ul{
-    text-align: center;
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Farruqui</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        background-color: #607d8b;
+      }
+
+      .content-centered {
+        text-align: center;
+        color: #fff;
+      }
+
+      /* Header & Footer */
+      header,
+      footer {
+        height: 100px;
+      }
+
+      header h1,
+      footer h3 {
+        font-size: 30px;
+        padding-top: 25px;
+      }
+
+      /* Navigation */
+      nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-flex;
+        padding: 25px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Main Content */
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      section,
+      article,
+      aside {
+        padding: 10px;
+        color: white;
+        background-color: rgba(96, 125, 139, 0.87);
+      }
+
+      section,
+      article {
+        flex: 3;
+      }
+
+      aside {
+        flex: 1;
+      }
+
+      /* Details */
+      details {
+        margin-top: 100px;
+        width: 100%;
+        padding: 10px 15px 50px 15px;
+        background-color: rgba(96, 125, 139, 0.85);
+      }
+
+      details p {
+        font-size: 18px;
+      }
+
+      summary {
+        color: white;
+        font-size: 22px;
+      }
     </style>
-    </head>
-    <body>
-    <nav style = "background-color: #607d8b70;" >
-    <ul>
-    <li> <a href = "#"> Home </a> </li>
-    <li> <a href = "#"> Activities </a> </li>
-    <li> <a href = "#"> Organizations </a> </li>
-    </ul>
+  </head>
+
+  <body>
+    <header class="container content-centered">
+      <h1>About Me: Simon Farruqui</h1>
+    </header>
+
+    <nav class="container">
+      <ul>
+        <li><a href="personal.html">Personal Life</a></li>
+        <li><a href="activities.html">School Activities</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+      </ul>
     </nav>
-</body>
+
+    <div class="main container">
+      <section>
+        <h2>Personal Life</h2>
+
+        <details class="container">
+          This page shows my early years and upbringing.
+          <p>
+            This page shows my early years and upbringing. I hail from a family
+            with roots in Bangladesh: my parents, Mark and Keya, are
+            first-generation Bengali immigrants. My younger sister, Sonya,
+            recently began her journey as a freshman at Milton Academy. I spent
+            the initial seven years of my life in Dix Hills, New York, before
+            relocating to Frisco, Texas. During my time in Texas, I transitioned
+            between four different schools and moved houses, making the
+            adjustments considerably challenging. After spending another seven
+            years in Texas, I felt drawn to the academic opportunities in New
+            England and decided to apply to boarding schools there. I was
+            fortunate to secure an admission to Milton Academy in March 2021.
+            This achievement prompted yet another move for my family, as we
+            decided to return to New York. I've now spent three enriching years
+            at Milton, where I've experienced growth not only academically but
+            also on a personal level.
+          </p>
+        </details>
+        <p></p>
+      </section>
+
+      <article>
+        <h2>School Activities</h2>
+        <p>Some Detailed Text</p>
+      </article>
+
+      <aside>
+        <h2>Extracurricular</h2>
+        <p>This will contain static content or advertisements, etc.</p>
+      </aside>
+    </div>
+
+    <details class="container">
+      <summary>Summary: click here to show details</summary>
+      <p>
+        Details: Upon clicking the summary element, details will be shown to the
+        user.
+      </p>
+    </details>
+
+    <footer class="container content-centered">
+      <h3>Footer Section</h3>
+      <p>&copy; Copyright 2023</p>
+    </footer>
+  </body>
 </html>
