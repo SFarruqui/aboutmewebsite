@@ -1,9 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta & Link Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Farruqui</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css">
+     <!-- Embedded CSS Styles -->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f2f2f;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background-color: #607d8b;
+            padding: 0 20px;
+        }
+
+        /* Content Centering Styling */
+        .content-centered {
+            text-align: center;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #455a64;
+        }
+
+        /* Photo Gallery Styling */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .photo-gallery .photo {
+            position: relative;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .photo-gallery .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .photo-gallery .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .photo-gallery .photo:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
 <body>
-    <!-- The header and nav remains same in all pages -->
+    <!-- Header Section -->
     <header class="container content-centered">
-        <h1>About Me</h1>
+        <h1>School Activities</h1>
     </header>
 
+    <!-- Navigation Bar -->
     <nav class="container">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -13,17 +120,51 @@
         </ul>
     </nav>
 
-    <!-- The main content specific to Personal Life -->
-    <div class="main container">
-        <section>
-            <h2>Personal Life</h2>
-            <!-- ... rest of the personal life content ... -->
-        </section>
+    <!-- Photo Gallery Section -->
+    <div class="photo-gallery container">
+        <div class="photo">
+            <img src="Tennis.png" alt="Description 1" />
+            <div class="caption">I have played JV tennis for Milton since my freshman year.</div>
+        </div>
+        <div class="photo">
+            <img src="saxophone.png" alt="Description 2" />
+            <div class="caption">I played the alto sax for the jazz ensemble during my freshman year.</div>
+        </div>
+        <div class="photo">
+            <img src="debate.png" alt="Description 3" />
+            <div class="caption">I am part of the Speech and Debate Team. This photo shows my partner, Alex Zhang, and I competing in our first Public Forum debate tournament which was online.</div>
+        </div>
+        <div class="photo">
+            <img src="econ.png" alt="Description 4" />
+            <div class="caption">I do competitions with the Economics Club. In this photo, I am receiving an award from Mr. Bland in recognition of my 4th Place award at the National Economics Challenge.</div>
+        </div>
+        <div class="photo">
+            <img src="un.png" alt="Description 5" />
+            <div class="caption">I love doing Model UN conferences during the weekends. This photo shows me winning "Best Delegate" or 1st Place at the Suffolk University GBMUN conference that took place in September 2023.</div>
+        </div>
+        <div class="photo">
+            <img src="msa.png" alt="Description 6" />
+            <div class="caption">I am one of the co-heads of the Muslim Students Association (MSA). I joined as a freshman during Ramandan and loved the community.</div>
+        </div>
+        <div class="photo">
+            <img src="persky.png" alt="Description 7" />
+            <div class="caption">I love writing for publications. I started out writing for the Milton Paper during my freshman year. In this picture, I won the Persky award for an article I wrote about the Milton soccer team. </div>
+        </div>
+        <div class="photo">
+            <img src="pib.png" alt="Description 8" />
+            <div class="caption">One of my passions is public policy, so I joined the Public Issues Board my freshman year and have helped organize voting drives and host speakers on Seminar day.</div>
+        </div>
+        <div class="photo">
+            <img src="research.png" alt="Description 9" />
+            <div class="caption">I love to conduct research projects outside of my regular coursework and participate in science fairs. In this photo, I competed in the MA state science fair at MIT in 2023. </div>
+        </div>
     </div>
 
-    <!-- Footer remains same in all pages -->
+    <!-- Footer Section -->
     <footer class="container content-centered">
-        <h3>Footer Section</h3>
-        <p>&copy; Copyright (Year)</p>
+        <h3>Contact: simon_farruqui25@milton.edu</h3>
+        <p>&copy; Copyright 2023</p>
     </footer>
 </body>
+
+</html>

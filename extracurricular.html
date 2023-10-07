@@ -1,29 +1,259 @@
-<body>
-    <!-- The header and nav remains same in all pages -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta & Link Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Farruqui</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Embedded CSS Styles -->
+    <style>
+      /* Base Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2f2f2f;
+      }
+
+      /* Container Styling */
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #607d8b;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Content Centering Styling */
+      .content-centered {
+        text-align: center;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      /* Navigation Styling */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #455a64;
+      }
+
+      /* Photo Gallery Styling */
+      .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+      }
+
+      .photo-gallery .photo {
+        position: relative;
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: transform 0.3s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .photo-gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .photo-gallery .photo:hover {
+        transform: scale(1.05);
+        z-index: 10;
+      }
+
+      /* Flexbox for layout */
+      .container.clearfix {
+        display: flex; /* Turning the container into a Flexbox container */
+        justify-content: space-between; /* Distributing the space between sidebar and article-section */
+        align-items: flex-start; /* Aligning items to start vertically */
+      }
+
+      .sidebar {
+        /* float: left; Removed this */
+        width: 25%;
+        padding: 20px;
+        background-color: #455a64;
+        border-radius: 10px;
+        color: white;
+      }
+
+      .article-section {
+        /* float: right; Removed this */
+        width: 70%;
+        padding: 20px;
+      }
+
+      /* Video Embedding Styling */
+      .video-player {
+        margin-top: 20px;
+        width: 100%; /* Adjusted the width to be 100% of the sidebar */
+        position: relative;
+      }
+
+      .video-player video {
+        width: 100%;
+        border-radius: 10px; /* optional: to match the rounded corners of the other elements */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
     <header class="container content-centered">
-        <h1>About Me</h1>
+      <h1>Extracurricular</h1>
     </header>
 
+    <!-- Navigation Bar -->
     <nav class="container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="personal.html">Personal Life</a></li>
-            <li><a href="activities.html">School Activities</a></li>
-            <li><a href="extracurricular.html">Extracurricular</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Life</a></li>
+        <li><a href="activities.html">School Activities</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+      </ul>
     </nav>
 
-    <!-- The main content specific to Personal Life -->
-    <div class="main container">
-        <section>
-            <h2>Personal Life</h2>
-            <!-- ... rest of the personal life content ... -->
-        </section>
+    <!-- Photo Gallery Section -->
+    <div class="photo-gallery container">
+      <div class="photo">
+        <img src="interview.png" alt="Description 1" />
+      </div>
+      <div class="photo">
+        <img src="boat.png" alt="Description 2" />
+      </div>
+      <div class="photo">
+        <img src="group.png" alt="Description 3" />
+      </div>
+      <div class="photo">
+        <img src="event1.png" alt="Description 4" />
+      </div>
+      <div class="photo">
+        <img src="event1a.png" alt="Description 5" />
+      </div>
+      <div class="photo">
+        <img src="event1b.png" alt="Description 6" />
+      </div>
+      <div class="photo">
+        <img src="event2.png" alt="Description 7" />
+      </div>
+      <div class="photo">
+        <img src="event2a.png" alt="Description 8" />
+      </div>
+      <div class="photo">
+        <img src="event2c.png" alt="Description 9" />
+      </div>
+      <div class="photo">
+        <img src="event2d.png" alt="Description 9" />
+      </div>
+      <div class="photo">
+        <img src="event2e.png" alt="Description 9" />
+      </div>
+      <div class="photo">
+        <img src="event2f.png" alt="Description 9" />
+      </div>
     </div>
 
-    <!-- Footer remains same in all pages -->
+    <!-- Main content area using Flexbox for layout -->
+    <div class="container clearfix">
+      <!-- Sidebar content: Story and video -->
+      <aside class="sidebar">
+        <h3>The Story Behind Simon's Nonprofit Walivest</h3>
+        <p>
+          Let me introduce you to Walivest, a nonprofit organization with a
+          clear-cut mission. We're all about stepping in before disasters
+          strike, making sure communities are ready for whatever comes their
+          way. But that's not the whole story. We're also here to provide people
+          with the tools and knowledge they need to stand strong and informed.
+          And when the dust settles after a disaster, we're committed to helping
+          communities get back on their feet and rebuild. How did it all begin?
+          Well, after witnessing online the devastation caused by Cyclone
+          Biparjoy in Pakistan and India, I started digging into cyclone
+          research. Conversations with my dad and hearing personal stories
+          brought it home for me. It became clear that it was time to take
+          action and make a positive impact.
+        </p>
+
+        <!-- Embedded Video Player -->
+        <div class="video-player">
+          <video controls>
+            <source src="Bangla TV News Feature.MP4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </aside>
+
+      <!-- Main articles/content section -->
+      <section class="article-section">
+        <article>
+          <!-- Article about event #1 -->
+          <h3>
+            Event #1: Ceiling Fan Donation Ceremony at Shihpur Government
+            Primary School
+          </h3>
+          <p>
+            On August 20, 2023, Walivest donated 8 ceiling fans to the Shihpur
+            Government Primary School established in 1920 and located in
+            Sonatola, Bogura, Bangladesh. The headmaster (in the yellow) hosted
+            a Ceiling Fan Donation Ceremony in honor of this donation and I gave
+            a short speech to all the students, staff, and faculty there on the
+            importance of giving back to improve your local community. My father
+            and some of his siblings had attended this school. Furthermore, it
+            was an honor to provide some inspiration for the young children
+            there.
+          </p>
+        </article>
+        <article>
+          <!-- Article about event #2 -->
+          <h3>
+            Event #2: Flood Ready Donation Drive at Bhola Sadar Upazila,
+            Bangladesh
+          </h3>
+          <p>
+            On August 22, 2023, Walivest donated 300 life jackets to low-income
+            fishermen of Ilisha, Kachia, Rajapur, and Shibpur unions of Bhola
+            Island, Bangladesh. The event was organized in collaboration with
+            Rajbari Sadar Upazila Samity. There were addresses from me, children
+            who attended the Hazi Nader Mia Bari School, some fishermen's union
+            leaders, and others who helped organize the event. Additionally,
+            this event was featured on Sun News, Ajker Bhola, Bhola 24 News,
+            Daily Bangladesh, World Bangla News, and Bangla TV.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
     <footer class="container content-centered">
-        <h3>Footer Section</h3>
-        <p>&copy; Copyright (Year)</p>
+      <h3>Contact: simon_farruqui25@milton.edu</h3>
+      <p>&copy; Copyright 2023</p>
     </footer>
-</body>
+  </body>
+</html>

@@ -1,158 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta & Link Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Farruqui</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <style>
-      /* Global Styles */
-      body {
-        font-family: Arial, sans-serif;
-      }
-
-      .container {
-        width: 100%;
-        background-color: #607d8b;
-      }
-
-      .content-centered {
-        text-align: center;
-        color: #fff;
-      }
-
-      /* Header & Footer */
-      header,
-      footer {
-        height: 100px;
-      }
-
-      header h1,
-      footer h3 {
-        font-size: 30px;
-        padding-top: 25px;
-      }
-
-      /* Navigation */
-      nav ul {
-        list-style-type: none;
-        text-align: center;
-        padding: 0;
-      }
-
-      nav li {
-        display: inline-flex;
-        padding: 25px;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-      }
-
-      /* Main Content */
-      .main {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      section,
-      article,
-      aside {
-        padding: 10px;
-        color: white;
-        background-color: rgba(96, 125, 139, 0.87);
-      }
-
-      section,
-      article {
-        flex: 3;
-      }
-
-      aside {
-        flex: 1;
-      }
-
-      /* Details */
-      details {
-        margin-top: 100px;
-        width: 100%;
-        padding: 10px 15px 50px 15px;
-        background-color: rgba(96, 125, 139, 0.85);
-      }
-
-      details p {
-        font-size: 18px;
-      }
-
-      summary {
-        color: white;
-        font-size: 22px;
-      }
-    </style>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
+    <!-- Header Section -->
     <header class="container content-centered">
       <h1>About Me: Simon Farruqui</h1>
     </header>
 
+    <!-- Navigation Bar -->
     <nav class="container">
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="personal.html">Personal Life</a></li>
         <li><a href="activities.html">School Activities</a></li>
         <li><a href="extracurricular.html">Extracurricular</a></li>
       </ul>
     </nav>
 
+    <!-- Main Content Area -->
     <div class="main container">
+      <!-- Personal Life Section -->
       <section>
         <h2>Personal Life</h2>
-
-        <details class="container">
-          This page shows my early years and upbringing.
+        <details>
+          <summary>Read More</summary>
           <p>
-            This page shows my early years and upbringing. I hail from a family
-            with roots in Bangladesh: my parents, Mark and Keya, are
-            first-generation Bengali immigrants. My younger sister, Sonya,
-            recently began her journey as a freshman at Milton Academy. I spent
-            the initial seven years of my life in Dix Hills, New York, before
-            relocating to Frisco, Texas. During my time in Texas, I transitioned
-            between four different schools and moved houses, making the
-            adjustments considerably challenging. After spending another seven
-            years in Texas, I felt drawn to the academic opportunities in New
-            England and decided to apply to boarding schools there. I was
-            fortunate to secure an admission to Milton Academy in March 2021.
-            This achievement prompted yet another move for my family, as we
-            decided to return to New York. I've now spent three enriching years
-            at Milton, where I've experienced growth not only academically but
-            also on a personal level.
+            I hail from a family with roots in Bangladesh: my parents, Mark and
+            Keya, are first-generation Bengali immigrants. My younger sister,
+            Sonya, recently began her journey as a freshman at Milton Academy. I
+            spent the initial seven years of my life in Dix Hills, New York,
+            before relocating to Frisco, Texas. During my time in Texas, I
+            transitioned between four different schools and moved houses, making
+            the adjustments considerably challenging. After spending another
+            seven years in Texas, I felt drawn to the academic opportunities in
+            New England and decided to apply to boarding schools there. I've now
+            spent three enriching years at Milton, where I've experienced growth
+            not only academically but also on a personal level.
           </p>
         </details>
-        <p></p>
       </section>
 
+      <!-- School Activities Section -->
       <article>
         <h2>School Activities</h2>
-        <p>Some Detailed Text</p>
+        <details>
+          <summary>Read More</summary>
+          <p>
+            Since elementary school, I have always loved the opportunity of
+            being a part of my school community beyond taking classes during the
+            required hours. I desired to have engage in the afterschool
+            opportunities my school offered such as Green Team and Math and
+            Science Team. Although I do not pursue the same afterschool
+            activities, I do love to participate in clubs, publications, and
+            affinities at Milton. From being a co-head of Muslim Students
+            Association to being a founder of Microfinance Club, I strive to
+            learn more about my passions through these organizations.
+          </p>
+        </details>
       </article>
 
+      <!-- Extracurricular Section -->
       <aside>
         <h2>Extracurricular</h2>
-        <p>This will contain static content or advertisements, etc.</p>
+        <details>
+          <summary>Read More</summary>
+          <p>
+            Although Milton Academy provides lots of opportunities to serve the
+            school community and greater Boston community. I also work with
+            national and international level organizations to pursue my
+            passions. For example, my nonprofit Walivest which is dedicated
+            towards stepping in before disasters strike, making sure communities
+            are ready for whatever comes their way. Also being an events
+            coordinator for the Youth Economics Initiative where I help organize
+            events such as economics quiz bowls and financial literacy contests.
+          </p>
+        </details>
       </aside>
     </div>
 
-    <details class="container">
-      <summary>Summary: click here to show details</summary>
-      <p>
-        Details: Upon clicking the summary element, details will be shown to the
-        user.
-      </p>
-    </details>
-
+    <!-- Footer Section -->
     <footer class="container content-centered">
-      <h3>Footer Section</h3>
+      <h3>Contact: simon_farruqui25@milton.edu</h3>
       <p>&copy; Copyright 2023</p>
     </footer>
   </body>
